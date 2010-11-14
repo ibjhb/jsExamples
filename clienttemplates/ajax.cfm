@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>Simple Client Templates Example</title>
+	<title>AJAX Client Templates Example</title>
 	<style type="text/css">
-		#myBills div {
+		#theContacts div {
 			background-color: navy;
 			color: white;
 			margin: 10px;
@@ -17,18 +17,11 @@
 	
 	<script type='text/javascript'>
 	$(function(){
-		
-	
 		$.getJSON('remote.cfc?method=getArtist'
 			,{returnFormat: 'json'}
 			,function(data){
-				console.log(data);
 				$('#artistTemplate').tmpl(data).appendTo('#theContacts');
 		});
-
-		
-		
-		
 	});
 	</script>
 </head>
