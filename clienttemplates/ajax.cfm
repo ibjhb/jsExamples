@@ -19,12 +19,11 @@
 	$(function(){
 		
 	
-	$.getJSON('remote.cfc?method=getArtist'
-		,{returnFormat: 'json'}
-		,function(data){
-			console.log(data);
-			//$('#billTemplate').tmpl(data).appendTo('#myBills');
-			
+		$.getJSON('remote.cfc?method=getArtist'
+			,{returnFormat: 'json'}
+			,function(data){
+				console.log(data);
+				$('#artistTemplate').tmpl(data).appendTo('#theContacts');
 		});
 
 		
@@ -36,11 +35,21 @@
 <body>
 	<div id="content">
 		
-		<div id="myBills"></div>
+		<div id="theContacts"></div>
 		
-		<script id="billTemplate" type="text/x-jquery-tmpl">
+		<script id="artistTemplate" type="text/x-jquery-tmpl">
 			<div>
-				Name:  ${ FirstName } ${ LastName }
+				Name:  ${ FIRSTNAME } ${ LASTNAME } <br />
+				EMail: ${ EMAIL } <br />
+				Address: <br />
+				${ ADDRESS } <br />
+				${ CITY }, ${ STATE } ${ POSTALCODE } <br />
+				{{if PHONE}}
+					Phone: ${ PHONE } <br />
+				{{/if}}
+				{{if FAX}}
+					Fax: ${ FAX }
+				{{/if}}
 			</div>
 		</script>
 		
