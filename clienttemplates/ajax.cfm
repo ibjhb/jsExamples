@@ -20,7 +20,9 @@
 		$.getJSON('remote.cfc?method=getArtist'
 			,{returnFormat: 'json'}
 			,function(data){
-				$('#artistTemplate').tmpl(data).appendTo('#theContacts');
+				$('#artistTemplate')
+					.tmpl(data)
+					.appendTo('#theContacts');
 		});
 	});
 	</script>
@@ -49,4 +51,3 @@
 	</div>
 </body>
 </html>
-
