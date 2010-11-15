@@ -1,13 +1,18 @@
-<cfcomponent persistent="true"> 
-    <cfproperty name="id" column = "ARTISTID" generator="increment"> 
-    <cfproperty name="FIRSTNAME"> 
-    <cfproperty name="LASTNAME"> 
-    <cfproperty name="ADDRESS"> 
-    <cfproperty name="CITY"> 
-    <cfproperty name="STATE"> 
-    <cfproperty name="POSTALCODE"> 
-    <cfproperty name="EMAIL"> 
-    <cfproperty name="PHONE"> 
-    <cfproperty name="FAX"> 
-    <cfproperty name="thepassword"> 
-</cfcomponent>
+component	persistent		= true
+			accessors		= true
+			entityname		= 'artists'
+			{
+
+	property name='id' 				column='ARTISTID' 		generator='increment';
+	property name='CaseDescription';
+	property name='FIRSTNAME'; 
+    property name='LASTNAME'; 
+    property name='ADDRESS'; 
+    property name='CITY'; 
+    property name='STATE'; 
+    property name='POSTALCODE'; 
+    property name='EMAIL'; 
+    property name='PHONE'; 
+    property name='FAX'; 
+    property name='thepassword'; 
+}
