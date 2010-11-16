@@ -12,8 +12,8 @@
 		}
 	</style>
 
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+	<!---<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>--->
+	<script type="text/javascript" src="js/requireplugins-jquery-1.4.4.js"></script>
 	
 	<script type='text/javascript'>
 	$(function(){
@@ -22,8 +22,6 @@
 			,function(data){
 				
 				$.each(data, function(i,item){
-					console.log(item);
-					
 					var theData = '<div>';
 					theData += 'Name: ' + item.FIRSTNAME + ' ' + item.LASTNAME + '<br />';
 					theData += 'EMail: ' + item.EMAIL + '<br />';
