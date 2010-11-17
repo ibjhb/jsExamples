@@ -12,7 +12,7 @@ component{
 	this.ormsettings = {
 			  logSQL 			= false
 			 ,dbcreate			= 'update'
-			 ,cfclocation		= '/scribble/jsexamples/clienttemplates/model/object/'
+			 ,cfclocation		= 'model/object/'
 	};
 
 
