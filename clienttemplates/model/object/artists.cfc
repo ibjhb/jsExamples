@@ -4,7 +4,6 @@ component	persistent		= true
 			{
 
 	property name='id' 				column='ARTISTID' 		generator='increment';
-	property name='CaseDescription';
 	property name='FIRSTNAME'; 
     property name='LASTNAME'; 
     property name='ADDRESS'; 
