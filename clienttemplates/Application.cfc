@@ -1,4 +1,3 @@
-
 component{
 	// Application properties
 	this.name = hash(getCurrentTemplatePath());
@@ -12,8 +11,5 @@ component{
 	this.ormsettings = {
 			  logSQL 			= false
 			 ,dbcreate			= 'update'
-			 ,cfclocation		= 'model/object/'
 	};
-
-
 }
